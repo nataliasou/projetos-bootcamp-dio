@@ -1,4 +1,4 @@
-<h1 align="center"> 💻 Projetos do Bootcamp DIO Avanade sobre Angular 💻 </h1>
+<h1 align="center"> 💻 Projetos do Bootcamp DIO Avanade de Angular 💻 </h1>
 <p align="center">Repositorio criado para colocar projetos desenvolvidos durante o bootcamp </p>
 
 ### ✅✅✅ Projetos criados
