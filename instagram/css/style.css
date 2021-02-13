@@ -1,0 +1,185 @@
+#{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243,243,243);
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+}
+
+.instagram-wrapper{
+  display: flex; /*vai alinhar de forma que vai ocupar o maior espaço que tem dentro da linha*/
+  align-items: center; /*alinhamento vertical (eixo y)*/
+  justify-content: start; /*alinhamento horizontal (eixo x)*/
+  /*
+     No align-items e no justify-content pode ser utilizado:
+     - space-evenly: pega os items que estao em linha e transforma eles em cada espaço dentro do container respeiando os espaços vazios nos lados
+     - space-around: deixa o espaço maior no meio do que nos lados
+     - space-between: o espaçotodo vai estar entre os elementos
+     - start: o espaço vai começar da esquerda para a direita
+  */
+  width: 60%;
+  height: 100vh;
+  margin-top: 2%;
+}
+
+.instagram-phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img{
+  height:50rem;
+}
+
+.instagram-continue{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;/*usando isso pois tem a propriedade flex-direction
+  tem as opções column, column-reverse(de baixo pra cima), row(já é o padrão), row-reverse
+  */
+  flex-direction: column;
+  width: 50%;
+  min-height:34 rem;
+}
+
+.group{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color:white;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.group:nth-child(1){ /*pega os filhos daquele elemento, o 1 diz que é o prmeiro elmento*/
+  min-height: 19rem;
+}
+
+.instagram-logo{
+  height: 3rem;
+}
+
+.profile-foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-foto img{
+  height: 6rem;
+}
+
+.instagram-login{
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.instagram-logout{
+  color: #0095f6;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.not-account{
+  color: rgb(160,160,160);
+}
+
+.link-blue{
+  color: #0095f6;
+}
+
+.get-the-app{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download{
+  display: flex;
+  width: 100%;
+  justify-content:space-evenly;
+  align-items: center;
+  padding:1rem;
+}
+
+.app-download{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1){
+  background-image: url('../img/app-store-button.png');
+}
+
+.app-download:nth-child(2){
+  background-image: url('../img/google-play-button.png');
+}
+
+/* media queries */
+
+@media(max-width: 1024px){
+  .instagram-wrapper{
+    width: 90%;
+  }
+}
+
+@media(max-width: 800px){
+  .instagram-wrapper{
+    margin-top: 12%;
+  }
+}
+
+@media(max-width: 640px){
+  body{
+    background-color: #ffffff;
+  }
+  .instagram-wrapper{
+    width: 90%;
+    margin-top: 20%;
+  }
+  .instagram-phone{
+    display: none;
+  }
+  .instagram-continue{
+    width: 100%;
+  }
+  .group{
+    border: 1px solid transparent;
+  }
+}
+
+@media(max-width: 320px){
+  .instagram-wrapper{
+    margin-top: 30%;
+  }
+  .instagram-continue{
+    width: 100%;
+  }
+  .download{
+    flex-direction: column;
+  }
+}
