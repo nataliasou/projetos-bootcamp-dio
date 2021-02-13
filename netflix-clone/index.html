@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Clone Netflix</title>
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!-- responsividade css -->
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h2 class="logo">NETFLIX</h2>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="filme-principal">
+        <div class="container">
+            <h3 class="titulo">LUPIN</h3>
+            <p class="descricao">Na adolescência, a vida de Assane Diop dá uma guinada radical quando seu pai morre após ser acusado de um crime que não cometeu. Vinte e cinco anos depois, Assane se inspira em "Arsène Lupin, o Ladrão de Casaca" para vingá-lo.</p>
+            <div class="botoes">
+                <button role="button" class="botao">
+                    <i class="fas fa-play"></i>
+                ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao">
+                    <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="carousel-filmes">
+    <div class="owl-carousel owl-theme">
+        <div class="item" onclick="detalhes(this)"><img src="img/mini1.jpg" class="box-filme"></div>
+        <div class="item" onclick="detalhes1(this)"><img src="img/mini2.jpg" class="box-filme"></div>
+        <div class="item" onclick="detalhes2(this)"><img src="img/mini3.jpg" class="box-filme"></div>
+        <div class="item" onclick="detalhes3(this)"><img src="img/mini4.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini5.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini6.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini7.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini8.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini9.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini10.jpg" class="box-filme"></div>
+        <div class="item"><img src="img/mini11.jpg" class="box-filme"></div>
+</div>
+    <div class="expansao-detalhes" id="expansao-detalhes">
+        <div class="container">
+                <div class="detalhes-esquerda">
+                    <div class="informacoes">
+                        <h3 id="ano"></h3>
+                    </div>
+                    <div>
+                        <p id="resumo"></p>
+                    </div>
+                </div>
+        <div class="detalhes-direita">
+                    <div class="elenco">
+                        <p>Elenco:</p> <p id="ator"></p>
+                    </div>
+                    <div class="generos">
+                        <p>Generos: </p> <p id="genero"></p>
+                    </div>
+                    <div class="momentos">
+                        <p>Momentos: </p><p id="momento"></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+<script src="https://kit.fontawesome.com/580b9bb857.js" crossorigin="anonymous"></script>
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
